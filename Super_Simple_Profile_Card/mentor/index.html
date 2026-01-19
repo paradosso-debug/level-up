@@ -1,0 +1,84 @@
+<!--
+  ✅ PROJECT: Super Simple Profile Card (MENTOR)
+  This file includes:
+  - The SAME instructional comments as the mentee version
+  - PLUS the finished HTML code
+-->
+
+<!-- STEP 1: Create the basic HTML boilerplate
+  - Add: <!DOCTYPE html>
+  - Add: <html lang="en">
+  - Inside <head>, add:
+      * <meta charset="UTF-8" />
+      * <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      * <title>Profile Card</title>
+      * Link your CSS file: <link rel="stylesheet" href="styles.css" />
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- STEP 2: Inside <body>, create a <main> container
+      - This <main> will help us center the card on the page
+    -->
+    <main>
+      <!-- STEP 3: Inside <main>, create a <section> for the card
+        - Give it a class name like: class="card"
+      -->
+      <section class="card">
+        <!-- STEP 4: Add an avatar image at the top of the card
+          - Use an <img>
+          - Give it a class like: class="avatar"
+          - Add an alt text like: alt="Profile photo"
+          - Use any image link you want (a placeholder is fine)
+        -->
+        <img
+          class="avatar"
+          src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=256&q=80"
+          alt="Profile photo"
+        />
+
+        <!-- STEP 5: Add a name and role
+          - Use an <h1> for the name
+          - Use a <p> for the role/title
+          - Give the role <p> a class like: class="role"
+        -->
+        <h1>Jocelin Rivera</h1>
+        <p class="role">Frontend Learner</p>
+
+        <!-- STEP 6: Add a short bio
+          - Use a <p>
+          - Give it a class like: class="bio"
+        -->
+        <p class="bio">
+          Building small projects daily. Learning HTML + CSS basics and keeping it
+          simple.
+        </p>
+
+        <!-- STEP 7: Add a row for buttons
+          - Create a <div> with a class like: class="actions"
+          - Inside, add 2 <button> elements:
+              * Button 1 text: "Message"
+              * Button 2 text: "Follow"
+          - Give each button a class:
+              * class="btn btn-primary"
+              * class="btn btn-secondary"
+        -->
+        <div class="actions">
+          <button class="btn btn-primary">Message</button>
+          <button class="btn btn-secondary">Follow</button>
+        </div>
+
+        <!-- STEP 8: Save your file and open index.html in the browser
+          - If you see nothing styled yet, that’s normal until CSS is finished!
+        -->
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+/*
+  ✅ PROJECT: Super Simple Profile Card (MENTOR)
+  This file includes:
+  - The SAME instructional comments as the mentee version
+  - PLUS the finished CSS code
+*/
+
+/* STEP 1: Apply a global font and page background
+  - Target: body
+  - Set:
+      * margin: 0;
+      * font-family: (choose something like Arial, sans-serif)
+      * background-color: a light gray
+*/
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* STEP 2: Center the card on the page
+  - Target: main
+  - Use Flexbox:
+      * display: flex;
+      * justify-content: center;
+      * align-items: center;
+  - Make it take the full screen height:
+      * min-height: 100vh;
+  - Add some padding so it doesn't touch the edges on small screens
+*/
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+/* STEP 3: Style the card container
+  - Target: .card
+  - Add:
+      * width (like 320px) OR max-width (like 340px)
+      * background-color: white
+      * padding
+      * border-radius
+      * box-shadow (soft shadow)
+      * text-align: center
+*/
+.card {
+  width: 320px;
+  max-width: 100%;
+  background-color: white;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+/* STEP 4: Style the avatar image
+  - Target: .avatar
+  - Add:
+      * width and height (same number, like 96px)
+      * border-radius: 50% (makes it a circle)
+      * object-fit: cover (prevents stretching)
+      * margin-bottom to create space below the image
+*/
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+/* STEP 5: Style the name
+  - Target: .card h1
+  - Adjust:
+      * font-size
+      * margin (reduce default spacing)
+*/
+.card h1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+/* STEP 6: Style the role text
+  - Target: .role
+  - Make it slightly smaller and gray
+  - Add a small margin-bottom
+*/
+.role {
+  margin: 6px 0 14px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* STEP 7: Style the bio text
+  - Target: .bio
+  - Set:
+      * color: slightly darker gray
+      * line-height for readability
+      * margin-bottom to separate from buttons
+*/
+.bio {
+  margin: 0 0 18px 0;
+  color: #444;
+  line-height: 1.4;
+}
+
+/* STEP 8: Layout the buttons in a row
+  - Target: .actions
+  - Use Flexbox:
+      * display: flex;
+      * gap: 10px (space between buttons)
+      * justify-content: center;
+*/
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* STEP 9: Base button styles
+  - Target: .btn
+  - Add:
+      * padding
+      * border: none;
+      * border-radius
+      * cursor: pointer;
+      * font-weight
+*/
+.btn {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* STEP 10: Primary button styles
+  - Target: .btn-primary
+  - Add a dark background and white text
+*/
+.btn-primary {
+  background-color: #111;
+  color: #fff;
+}
+
+/* STEP 11: Secondary button styles
+  - Target: .btn-secondary
+  - Add a light background and dark text
+*/
+.btn-secondary {
+  background-color: #e9e9e9;
+  color: #111;
+}
+
+/* STEP 12: Add hover effects
+  - Target:
+      * .btn:hover
+  - Make it slightly darker or slightly scale up
+*/
+.btn:hover {
+  transform: scale(1.03);
+}
