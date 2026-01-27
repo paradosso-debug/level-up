@@ -1,0 +1,258 @@
+<!--
+  MINI PORTFOLIO — 
+  Goal: Build a one-page mini portfolio using ONLY:
+  nav, div, section, h1-h3, p, span, a, ul, li, figure, img, figcaption
+
+  IMPORTANT:
+  - Replace each step comment with real HTML, little by little.
+  - Do NOT skip steps.
+-->
+
+<!-- ======================================================
+  STEP 1) START THE HTML DOCUMENT
+  ====================================================== -->
+
+<!-- 1.1) Type: <!DOCTYPE html>
+     Why: Tells the browser “this is modern HTML5”. -->
+
+<!-- 1.2) Add: <html lang="en">
+     Why: “lang” helps accessibility + browsers know the page language. -->
+
+<!-- 1.3) Create the <head> section
+     Why: <head> contains page settings, not visible page content. -->
+
+<!-- 1.4) Inside <head>, add:
+     - <meta charset="UTF-8" />
+       Why: Allows special characters (accents, emojis, etc.)
+
+     - <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       Why: Makes the site scale correctly on phones/tablets.
+
+     - <title>Mini Portfolio</title>
+       Why: Shows on the browser tab.
+
+     - <link rel="stylesheet" href="styles.css" />
+       Why: Connects this HTML file to your CSS file. -->
+
+<!-- 1.5) Close the head and open the body:
+     - </head>
+     - <body>
+-->
+
+<!-- ======================================================
+  STEP 2) BUILD THE TOP NAVIGATION BAR
+  ====================================================== -->
+
+<!-- 2.1) Add a <nav> tag at the top of the body.
+     Why: nav means “this section is navigation links”. -->
+
+<!-- 2.2) Inside <nav>, add a <div> with TWO classes:
+     class="container nav-inner"
+
+     Why:
+     - "container" centers content + gives side padding
+     - "nav-inner" lets us style the nav layout specifically -->
+
+<!-- 2.3) Inside that div, add a logo using:
+     <p class="logo">MyPortfolio</p>
+
+     Why:
+     - It's simple text
+     - We can style it with CSS using the .logo class -->
+
+<!-- 2.4) Still inside the same div, add a <ul class="nav-links">
+     Why:
+     - A nav menu is usually a list of links
+     - “nav-links” is the class we’ll style in CSS -->
+
+<!-- 2.5) Inside the <ul>, add 3 <li> items.
+     Each <li> contains an <a> link.
+
+     Link 1:
+     - <a href="#projects">Projects</a>
+
+     Link 2:
+     - <a href="#about">About</a>
+
+     Link 3:
+     - <a href="#contact">Contact</a>
+
+     Why:
+     - The #projects / #about / #contact will jump (scroll) to sections
+     - These must match the id="" on your sections later -->
+
+<!-- 2.6) Close the nav structure:
+     - close </ul>
+     - close </div>
+     - close </nav>
+-->
+
+<!-- ======================================================
+  STEP 3) CREATE THE MAIN PAGE WRAPPER
+  ====================================================== -->
+
+<!-- 3.1) After </nav>, add:
+     <main class="container">
+
+     Why:
+     - <main> holds the primary content of the page
+     - "container" keeps everything aligned with the nav -->
+
+<!-- ======================================================
+  STEP 4) HERO SECTION (TOP INTRO SECTION)
+  ====================================================== -->
+
+<!-- 4.1) Inside <main>, add a <section> with TWO classes:
+     class="section hero"
+
+     Why:
+     - "section" gives consistent spacing
+     - "hero" is the special top section style -->
+
+<!-- 4.2) Inside hero section, add:
+     - <h1>Hello, I'm a Beginner Dev</h1>
+       Why: The biggest heading for the page.
+
+     - <p>Learning HTML & CSS step by step.</p>
+       Why: A short description line.
+
+     - Another <p> with a <span class="highlight"> around ONE word:
+       Example:
+       Focused on <span class="highlight">structure</span>.
+
+       Why:
+       - <span> is for styling small text inside a sentence
+       - "highlight" will make the word stand out in CSS -->
+
+<!-- 4.3) Add a call-to-action link:
+     <a class="cta" href="#projects">View Projects</a>
+
+     Why:
+     - This is a link that looks like a button
+     - It jumps down to the Projects section -->
+
+<!-- 4.4) Close the hero section:
+     </section>
+-->
+
+<!-- ======================================================
+  STEP 5) PROJECTS SECTION (WITH GRID + CARD)
+  ====================================================== -->
+
+<!-- 5.1) Create a new <section> with:
+     class="section"
+     id="projects"
+
+     Why:
+     - class="section" for spacing
+     - id="projects" so the nav link works -->
+
+<!-- 5.2) Inside, add:
+     <h2>Projects</h2>
+     Why:
+     - h2 is the next heading level after h1 -->
+
+<!-- 5.3) Add a <div class="grid">
+     Why:
+     - This is the container that will hold project “cards”
+     - CSS grid will control how cards line up -->
+
+<!-- 5.4) Inside the grid div, add a project card using:
+     <figure class="card">
+
+     Why figure?
+     - figure is perfect for image + description grouped together -->
+
+<!-- 5.5) Inside the figure, add an image:
+     <img src="https://via.placeholder.com/400" />
+
+     Why:
+     - This displays an image preview
+     NOTE:
+     - Later you can add an alt="" for accessibility -->
+
+<!-- 5.6) Under the img, add a <figcaption> that contains:
+     - <h3>Project One</h3>
+     - <p>Simple layout practice.</p>
+
+     Why:
+     - figcaption is the caption/description for the figure -->
+
+<!-- 5.7) Close everything in this section:
+     - close </figcaption>
+     - close </figure>
+     - close </div> (grid)
+     - close </section>
+-->
+
+<!-- ======================================================
+  STEP 6) ABOUT SECTION
+  ====================================================== -->
+
+<!-- 6.1) Create a <section> with:
+     class="section"
+     id="about"
+
+     Why:
+     - id="about" makes nav link work -->
+
+<!-- 6.2) Inside, add:
+     - <h2>About Me</h2>
+     - <p>I am practicing layout and structure.</p>
+
+     Why:
+     - simple text section for beginners
+     - easy to style later -->
+
+<!-- 6.3) Close the about section:
+     </section>
+-->
+
+<!-- ======================================================
+  STEP 7) CONTACT SECTION (LIST OF LINKS)
+  ====================================================== -->
+
+<!-- 7.1) Create a <section> with:
+     class="section"
+     id="contact"
+
+     Why:
+     - id="contact" makes nav link work -->
+
+<!-- 7.2) Inside, add:
+     <h2>Contact</h2>
+
+     Why:
+     - heading for this section -->
+
+<!-- 7.3) Add a list of contact links:
+     <ul class="contact-links">
+
+     Why:
+     - ul/li is a clean way to show a list of links
+     - "contact-links" lets CSS style them like buttons -->
+
+<!-- 7.4) Add list items with anchor tags:
+     - <li><a href="#">Email</a></li>
+     - <li><a href="#">GitHub</a></li>
+
+     Why:
+     - the <a> tag is the clickable part
+     - href="#" is a placeholder until you add real links -->
+
+<!-- 7.5) Close contact section:
+     - close </ul>
+     - close </section>
+-->
+
+<!-- ======================================================
+  STEP 8) CLOSE MAIN + CLOSE DOCUMENT
+  ====================================================== -->
+
+<!-- 8.1) Close the main:
+     </main>
+
+  8.2) Close body and html:
+     </body>
+     </html>
+-->
