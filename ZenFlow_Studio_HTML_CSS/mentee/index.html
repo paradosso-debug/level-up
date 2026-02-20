@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--
+      STEP 0 — Document setup (the 4 required lines)
+
+      Inside <head>, type these 4 lines in this exact order:
+
+      1) <meta charset="UTF-8" />
+         - Makes letters/symbols display correctly.
+
+      2) <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+         - Makes the page scale correctly on phones.
+
+      3) <title>ZenFlow Studio — Landing Page</title>
+         - This is the text you see on the browser tab.
+
+      4) <link rel="stylesheet" href="style.css" />
+         - Connects this HTML file to your CSS file.
+
+      EXTRA (optional but recommended):
+      - Add Remix Icon CDN if you want icons later (not required for NO JS).
+    -->
+  </head>
+
+  <body>
+    <!--
+      STEP 1 — Build the sticky top header (header > nav > row)
+
+      At the very top of <body>, create these tags (nested inside each other):
+
+      1) Add: <header class="site-header">
+      2) Inside header, add: <nav class="nav">
+      3) Inside nav, add: <div class="container nav__row">
+
+      Keep all 3 tags OPEN for now.
+      You will close them after you add the brand, links, and “Book” button.
+    -->
+
+    <!--
+      STEP 2 — Brand (left side): clickable logo (dot + name)
+
+      Inside <div class="container nav__row"> add:
+
+      1) Add an <a> tag with:
+         - class="brand"
+         - href="#top"
+         - aria-label="Go to top"
+
+      2) Inside that <a>, add TWO <span> tags:
+
+         a) First span:
+            - class="brand__dot"
+            - aria-hidden="true"
+            - (no text inside)
+
+         b) Second span:
+            - class="brand__text"
+            - text inside: ZenFlow Studio
+    -->
+
+    <!--
+      STEP 3 — Nav links (center): list of 4 jump links
+
+      Still inside <div class="container nav__row"> (after the brand):
+
+      1) Add a <ul> tag with:
+         - class="nav__links"
+         - aria-label="Primary navigation"
+
+      2) Inside the <ul>, add 4 <li> tags.
+         Inside each <li>, add an <a> tag:
+
+         a) <a href="#services">Services</a>
+         b) <a href="#portfolio">Portfolio</a>
+         c) <a href="#about">About</a>
+         d) <a href="#contact">Contact</a>
+
+      Beginner note:
+      - These links jump to parts of the page that have the SAME id name.
+      - Example: href="#services" jumps to id="services"
+    -->
+
+    <!--
+      STEP 4 — Call-to-action link (right): looks like a button
+
+      Still inside <div class="container nav__row"> (after the <ul>):
+
+      Add this <a> tag:
+      - class="btn btn--primary"
+      - href="#contact"
+      - text: Book a class
+
+      Now close the tags you opened in STEP 1:
+      - close </div>   (nav__row)
+      - close </nav>
+      - close </header>
+    -->
+
+    <!--
+      STEP 5 — Main wrapper: the container for everything UNDER the navbar
+
+      After </header>, add:
+
+      1) <main id="top">
+
+      Why id="top"?
+      - The brand link uses href="#top", so it needs a matching id.
+
+      Beginner note:
+      - Inside <main>, we will create multiple big “blocks”.
+      - A “block” here means: a group of content inside a <section> tag.
+
+      You will add 5 blocks (in this order):
+      1) Hero block
+      2) Services block
+      3) Portfolio block
+      4) About block
+      5) Contact block
+
+      Keep <main> OPEN until STEP 11.
+    -->
+
+    <!--
+      STEP 6 — Hero block (big intro area at the top)
+
+      Inside <main id="top"> add:
+
+      1) Add: <section class="hero">
+      2) Inside it add: <div class="container hero__content">
+
+      3) Inside that div, add these tags in this order:
+
+         a) <p class="eyebrow">Yoga • Mobility • Breathwork</p>
+         b) <h1 class="hero__title">ZenFlow Studio</h1>
+         c) <p class="hero__subtitle">A calm, responsive landing page — built with only HTML + CSS.</p>
+
+      4) Add the HERO IMAGE under the text:
+         <img class="hero__img" src="assets/header.png" alt="ZenFlow studio hero image" />
+
+      5) Still inside hero__content, add a row for 2 buttons:
+
+         a) Add: <div class="cta-row">
+         b) Inside it add TWO <a> tags:
+
+            - <a class="btn btn--primary" href="#services">Explore services</a>
+            - <a class="btn btn--ghost" href="#portfolio">View portfolio</a>
+
+      6) Close:
+         - </div> (cta-row)
+         - </div> (hero__content)
+         - </section>
+    -->
+
+    <!--
+      STEP 7 — Services block (title + subtitle + cards grid)
+
+      Under the hero, still inside <main>:
+
+      1) Add a <section> tag with:
+         - id="services"
+         - class="section"
+
+      2) Inside that <section>, add a <div> with:
+         - class="container"
+
+      3) Inside the container, add:
+         a) <h2 class="section__title">Services</h2>
+         b) <p class="section__subtitle">3 simple offerings (cards) for practice.</p>
+
+      4) Still inside the container, add:
+         <div class="grid grid--cards">
+
+      5) Inside the grid, add 3 service cards (see STEP 7A).
+
+      6) Close:
+         - </div> (grid)
+         - </div> (container)
+         - </section>
+    -->
+
+    <!--
+      STEP 7A — One service card (repeat 3 times inside .grid.grid--cards)
+
+      Inside <div class="grid grid--cards"> add this exact structure:
+
+      <article class="card">
+        <p class="card__tag">Class</p>
+        <h3 class="card__title">Service Name</h3>
+        <p class="card__text">One sentence describing the service.</p>
+        <a class="card__link" href="#contact">Book</a>
+      </article>
+    -->
+
+    <!--
+      STEP 8 — Portfolio block (gallery tiles)
+
+      Under Services, still inside <main>:
+
+      1) Add a <section> tag with:
+         - id="portfolio"
+         - class="section section--alt"
+
+      2) Inside it add:
+         <div class="container">
+
+      3) Inside container add:
+         a) <h2 class="section__title">Portfolio</h2>
+         b) <p class="section__subtitle">A simple gallery grid (tiles only).</p>
+
+      4) Add the gallery grid wrapper:
+         <div class="grid grid--gallery">
+
+      5) Inside the gallery grid, add 8 gallery tiles (see STEP 8A).
+
+      6) Close:
+         - </div> (gallery grid)
+         - </div> (container)
+         - </section>
+    -->
+
+    <!--
+      STEP 8A — One gallery tile (repeat 8 times)
+
+      Inside <div class="grid grid--gallery"> add:
+
+      <figure class="photo">
+        <img class="photo__img" src="assets/header.png" alt="Studio moment" />
+        <figcaption class="photo__cap">Studio</figcaption>
+      </figure>
+
+      Beginner note:
+      - For practice, we reuse the same image file.
+      - Later you can replace each tile with different images.
+    -->
+
+    <!--
+      STEP 9 — About block (left text + right facts)
+
+      Under Portfolio, still inside <main>:
+
+      1) Add a <section> tag with:
+         - id="about"
+         - class="section"
+
+      2) Inside it add:
+         <div class="container">
+
+      3) Inside container add:
+         a) <h2 class="section__title">About</h2>
+         b) <p class="section__subtitle">A quick overview (practice content).</p>
+
+      4) Add:
+         <div class="about">
+
+      5) Inside <div class="about"> add TWO divs:
+
+         LEFT:
+         - <div class="about__text">
+           Add 2 paragraphs inside:
+           <p>...</p>
+           <p>...</p>
+
+         RIGHT:
+         - <div class="about__facts card">
+           Add:
+           <h3 class="facts__title">Quick Facts</h3>
+           Then:
+           <ul class="facts__list"> with 5 <li> items
+
+      6) Close:
+         - </div> (about)
+         - </div> (container)
+         - </section>
+    -->
+
+    <!--
+      STEP 10 — Contact block (simple contact content)
+
+      Under About, still inside <main>:
+
+      1) Add a <section> tag with:
+         - id="contact"
+         - class="section section--alt"
+
+      2) Inside it add:
+         <div class="container">
+
+      3) Inside container add:
+         a) <h2 class="section__title">Contact</h2>
+         b) <p class="section__subtitle">Your call-to-action + contact details.</p>
+
+      4) Add a “chip row” of 3 links (see STEP 10A).
+
+      5) Close section + container.
+    -->
+
+    <!--
+      STEP 10A — Contact chips (3 links)
+
+      Inside a <div class="chip-row"> add 3 <a class="chip"> links:
+      - Email
+      - Instagram
+      - Location
+    -->
+
+    <!--
+      STEP 11 — Close <main> and add the footer
+
+      1) After STEP 10, close </main>.
+
+      2) Then add the footer:
+
+      <footer class="site-footer">
+        <div class="container footer__row">
+          <p class="footer__legal">Practice project • HTML + CSS only</p>
+
+          <div class="footer__links">
+            <a href="#top">Back to top</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </footer>
+    -->
+  </body>
+</html>

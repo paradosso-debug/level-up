@@ -1,0 +1,560 @@
+/* Young Miko Fan Page — style.css */
+
+/*
+  STEP 1 — Reset  
+
+  RULE 1
+  SELECTORS:
+    *, *::before, *::after
+  PROPERTIES:
+    box-sizing: border-box;
+
+  RULE 2
+  SELECTORS:
+    html,
+    body
+  PROPERTIES:
+    margin: 0;
+    padding: 0;
+*/
+
+/*
+  STEP 2 — Body base styles   
+
+  SELECTOR:
+    body
+  PROPERTIES:
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+                 "Apple Color Emoji", "Segoe UI Emoji";
+    line-height: 1.5;
+    background: #07060a;
+    color: rgba(255, 255, 255, 0.92);
+*/
+
+/*
+  STEP 3 — Global links   
+
+  SELECTOR:
+    a
+  PROPERTIES:
+    color: inherit;
+    text-decoration: none;
+*/
+
+/*
+  STEP 4 — Container  
+
+  SELECTOR:
+    .container
+  PROPERTIES:
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 16px;
+*/
+
+/*
+  STEP 5 — Header + nav row   
+
+  SELECTOR:
+    .site-header
+  PROPERTIES:
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(7, 6, 10, 0.72);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  SELECTOR:
+    .nav
+  PROPERTIES:
+    height: 56px;
+    display: flex;
+    align-items: center;
+
+  SELECTOR:
+    .nav__row
+  PROPERTIES:
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+*/
+
+/*
+  STEP 6 — Brand  
+
+  SELECTOR:
+    .brand
+  PROPERTIES:
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+  SELECTOR:
+    .brand__dot
+  PROPERTIES:
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: #a855f7;
+    box-shadow: 0 0 18px rgba(168, 85, 247, 0.55);
+
+  SELECTOR:
+    .brand__text
+  PROPERTIES:
+    font-weight: 700;
+    letter-spacing: 0.4px;
+*/
+
+/*
+  STEP 7 — Nav links list   
+
+  SELECTOR:
+    .nav__links
+  PROPERTIES:
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+
+  SELECTOR:
+    .nav__links a
+  PROPERTIES:
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.78);
+
+  SELECTOR:
+    .nav__links a:hover
+  PROPERTIES:
+    text-decoration: underline;
+    text-underline-offset: 5px;
+*/
+
+/*
+  STEP 8 — Buttons  
+
+  SELECTOR:
+    .btn
+  PROPERTIES:
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 14px;
+    border: 1px solid transparent;
+
+  SELECTOR:
+    .btn--primary
+  PROPERTIES:
+    background: #a855f7;
+    color: #0b0710;
+
+  SELECTOR:
+    .btn--primary:hover
+  PROPERTIES:
+    filter: brightness(1.05);
+
+  SELECTOR:
+    .btn--ghost
+  PROPERTIES:
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.18);
+    color: rgba(255, 255, 255, 0.9);
+
+  SELECTOR:
+    .btn--ghost:hover
+  PROPERTIES:
+    border-color: rgba(255, 255, 255, 0.32);
+*/
+
+/*
+  STEP 9 — Hero   
+
+  SELECTOR:
+    .hero
+  PROPERTIES:
+    padding: 92px 0 72px;
+    text-align: center;
+    background:
+      radial-gradient(900px 360px at 20% 20%, rgba(168, 85, 247, 0.42), transparent 60%),
+      radial-gradient(820px 320px at 80% 25%, rgba(34, 211, 238, 0.28), transparent 60%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent 60%);
+
+  SELECTOR:
+    .hero__content
+  PROPERTIES:
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+  SELECTOR:
+    .eyebrow
+  PROPERTIES:
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.78);
+
+  SELECTOR:
+    .hero__title
+  PROPERTIES:
+    margin: 0;
+    font-size: 64px;
+    letter-spacing: -1px;
+
+  SELECTOR:
+    .hero__subtitle
+  PROPERTIES:
+    margin: 0;
+    max-width: 64ch;
+    color: rgba(255, 255, 255, 0.78);
+
+  SELECTOR:
+    .cta-row
+  PROPERTIES:
+    display: inline-flex;
+    gap: 12px;
+    margin-top: 10px;
+*/
+
+/*
+  STEP 10 — Sections  
+
+  SELECTOR:
+    .section
+  PROPERTIES:
+    padding: 56px 0;
+
+  SELECTOR:
+    .section__title
+  PROPERTIES:
+    margin: 0 0 6px;
+    font-size: 28px;
+    letter-spacing: -0.3px;
+
+  SELECTOR:
+    .section__subtitle
+  PROPERTIES:
+    margin: 0 0 18px;
+    color: rgba(255, 255, 255, 0.72);
+
+  SELECTOR:
+    .section--alt
+  PROPERTIES:
+    background: rgba(255, 255, 255, 0.03);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+*/
+
+/*
+  STEP 11 — Grids   
+
+  SELECTOR:
+    .grid
+  PROPERTIES:
+    display: grid;
+    gap: 16px;
+
+  SELECTOR:
+    .grid--cards
+  PROPERTIES:
+    grid-template-columns: repeat(3, 1fr);
+
+  SELECTOR:
+    .grid--gallery
+  PROPERTIES:
+    grid-template-columns: repeat(4, 1fr);
+*/
+
+/*
+  STEP 12 — Music cards   
+
+  SELECTOR:
+    .card
+  PROPERTIES:
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    padding: 18px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+    transition: transform 160ms ease, border-color 160ms ease;
+    min-height: 160px;
+
+  SELECTOR:
+    .card:hover
+  PROPERTIES:
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.16);
+
+  SELECTOR:
+    .card__tag
+  PROPERTIES:
+    margin: 0;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+
+  SELECTOR:
+    .card__title
+  PROPERTIES:
+    margin: 6px 0 6px;
+    font-size: 18px;
+
+  SELECTOR:
+    .card__text
+  PROPERTIES:
+    margin: 0 0 10px;
+    color: rgba(255, 255, 255, 0.72);
+
+  SELECTOR:
+    .card__link
+  PROPERTIES:
+    color: #22d3ee;
+    font-weight: 700;
+
+  SELECTOR:
+    .card__link:hover
+  PROPERTIES:
+    text-decoration: underline;
+    text-underline-offset: 5px;
+*/
+
+/*
+  STEP 13 — Tour rows   
+
+  SELECTOR:
+    .tour-list
+  PROPERTIES:
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+  SELECTOR:
+    .tour-row
+  PROPERTIES:
+    display: grid;
+    grid-template-columns: 92px 1.2fr 1.4fr auto;
+    gap: 12px;
+    align-items: center;
+    padding: 14px 16px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(0, 0, 0, 0.18);
+
+  SELECTOR:
+    .tour-date
+  PROPERTIES:
+    font-weight: 800;
+
+  SELECTOR:
+    .tour-city
+  PROPERTIES:
+    color: rgba(255, 255, 255, 0.86);
+
+  SELECTOR:
+    .tour-venue
+  PROPERTIES:
+    color: rgba(255, 255, 255, 0.65);
+
+  SELECTOR:
+    .tour-link
+  PROPERTIES:
+    color: #a855f7;
+    font-weight: 800;
+
+  SELECTOR:
+    .tour-link:hover
+  PROPERTIES:
+    text-decoration: underline;
+    text-underline-offset: 5px;
+*/
+
+/*
+  STEP 14 — Gallery images only   
+
+  SELECTOR:
+    .photo
+  PROPERTIES:
+    margin: 0;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.03);
+    transition: transform 160ms ease, border-color 160ms ease;
+
+  SELECTOR:
+    .photo:hover
+  PROPERTIES:
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.18);
+
+  SELECTOR:
+    .photo__img
+  PROPERTIES:
+    width: 100%;
+    display: block;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+
+  SELECTOR:
+    .photo__cap
+  PROPERTIES:
+    padding: 10px 12px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.72);
+*/
+
+/*
+  STEP 15 — About layout  
+
+  SELECTOR:
+    .about
+  PROPERTIES:
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 16px;
+
+  SELECTOR:
+    .about__text p
+  PROPERTIES:
+    margin: 0 0 12px;
+    color: rgba(255, 255, 255, 0.78);
+
+  SELECTOR:
+    .facts__title
+  PROPERTIES:
+    margin: 0 0 10px;
+    font-size: 16px;
+
+  SELECTOR:
+    .facts__list
+  PROPERTIES:
+    margin: 0;
+    padding-left: 18px;
+    color: rgba(255, 255, 255, 0.76);
+*/
+
+/*
+  STEP 16 — Chips   
+
+  SELECTOR:
+    .chip-row
+  PROPERTIES:
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+  SELECTOR:
+    .chip
+  PROPERTIES:
+    display: inline-flex;
+    padding: 10px 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.03);
+    font-weight: 800;
+
+  SELECTOR:
+    .chip:hover
+  PROPERTIES:
+    border-color: rgba(255, 255, 255, 0.22);
+*/
+
+/*
+  STEP 17 — Footer  
+
+  SELECTOR:
+    .site-footer
+  PROPERTIES:
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(0, 0, 0, 0.16);
+
+  SELECTOR:
+    .footer__row
+  PROPERTIES:
+    padding: 18px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+
+  SELECTOR:
+    .footer__legal
+  PROPERTIES:
+    margin: 0;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.62);
+
+  SELECTOR:
+    .footer__links
+  PROPERTIES:
+    display: flex;
+    gap: 12px;
+
+  SELECTOR:
+    .footer__links a
+  PROPERTIES:
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.62);
+
+  SELECTOR:
+    .footer__links a:hover
+  PROPERTIES:
+    text-decoration: underline;
+    text-underline-offset: 5px;
+*/
+
+/*
+  STEP 18 — Responsive breakpoints  
+
+  MEDIA QUERY A:
+    @media (max-width: 900px) { ... }
+
+  INSIDE IT WRITE THESE RULES:
+
+    .nav__links { display: none; }
+
+    .hero__title { font-size: 46px; }
+
+    .grid--cards { grid-template-columns: 1fr; }
+
+    .grid--gallery { grid-template-columns: repeat(2, 1fr); }
+
+    .about { grid-template-columns: 1fr; }
+
+    .tour-row {
+      grid-template-columns: 82px 1fr;
+      grid-auto-rows: auto;
+    }
+
+    .tour-venue {
+      grid-column: 1 / -1;
+      opacity: 0.9;
+    }
+
+    .tour-link {
+      grid-column: 2 / 3;
+      justify-self: end;
+    }
+
+  MEDIA QUERY B:
+    @media (max-width: 520px) { ... }
+
+  INSIDE IT WRITE THESE RULES:
+
+    .container { padding: 0 12px; }
+
+    .hero { padding: 72px 0 56px; }
+
+    .hero__title { font-size: 38px; }
+
+    .grid--gallery { grid-template-columns: 1fr; }
+*/

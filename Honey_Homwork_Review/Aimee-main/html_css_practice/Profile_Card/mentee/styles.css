@@ -1,0 +1,177 @@
+/*
+  ✅ PROJECT: Super Simple Profile Card (MENTEE)
+  This file is ONLY instructional comments.
+  Your goal is to follow the steps and write the CSS yourself.
+*/
+
+/* STEP 1: Apply a global font and page background
+  - Target: body
+  - Set:
+      * margin: 0;
+      * font-family: (choose something like Arial, sans-serif)
+      * background-color: a light gray
+*/
+
+/* STEP 2: Center the card on the page
+  - Target: main
+  - Use Flexbox:
+      * display: flex;
+      * justify-content: center;
+      * align-items: center;
+  - Make it take the full screen height:
+      * min-height: 100vh;
+  - Add some padding so it doesn't touch the edges on small screens
+*/
+
+/* STEP 3: Style the card container
+  - Target: .card
+  - Add:
+      * width (like 320px) OR max-width (like 340px)
+      * background-color: white
+      * padding
+      * border-radius
+      * box-shadow (soft shadow)
+      * text-align: center
+*/
+
+/* STEP 4: Style the avatar image
+  - Target: .avatar
+  - Add:
+      * width and height (same number, like 96px)
+      * border-radius: 50% (makes it a circle)
+      * object-fit: cover (prevents stretching)
+      * margin-bottom to create space below the image
+*/
+
+/* STEP 5: Style the name
+  - Target: .card h1
+  - Adjust:
+      * font-size
+      * margin (reduce default spacing)
+*/
+
+/* STEP 6: Style the role text
+  - Target: .role
+  - Make it slightly smaller and gray
+  - Add a small margin-bottom
+*/
+
+/* STEP 7: Style the bio text
+  - Target: .bio
+  - Set:
+      * color: slightly darker gray
+      * line-height for readability
+      * margin-bottom to separate from buttons
+*/
+
+/* STEP 8: Layout the buttons in a row
+  - Target: .actions
+  - Use Flexbox:
+      * display: flex;
+      * gap: 10px (space between buttons)
+      * justify-content: center;
+*/
+
+/* STEP 9: Base button styles
+  - Target: .btn
+  - Add:
+      * padding
+      * border: none;
+      * border-radius
+      * cursor: pointer;
+      * font-weight
+*/
+
+/* STEP 10: Primary button styles
+  - Target: .btn-primary
+  - Add a dark background and white text
+*/
+
+/* STEP 11: Secondary button styles
+  - Target: .btn-secondary
+  - Add a light background and dark text
+*/
+
+/* STEP 12: Add hover effects
+  - Target:
+      * .btn:hover
+  - Make it slightly darker or slightly scale up
+*/
+
+/* ✅ NOTE:
+  This mentee file should contain NO real CSS rules beyond comments.
+  When practicing, you will replace comments with real CSS.
+*/
+
+body{
+  margin: 0;
+  font-family:'century gothic';
+  background-color: lightgray;
+}
+h1{
+  color:darkslateblue;
+  border-radius: 10px;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  padding: 10px;
+}
+.card{
+  width: 320px;
+  max-width: 340px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 100px;
+  box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.75);
+  text-align: center;
+}
+.avatar{
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  margin-top:20px;
+  }
+h1{
+  font-size: 30px;
+  margin: 10px;
+  }
+.role{
+  font-size: 15px;
+  color: darkgray;
+}
+.bio{ 
+  color: gray;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+.actions{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.btn{
+  padding:5px;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+font-weight: bold;
+}
+.btn-primary{
+background-color: green;
+color:lightgreen;
+}
+.btn-secondary{
+  background-color: lightgreen;
+  color:green;
+}
+.btn:hover{
+  background-color: darkslateblue;
+  color:lightblue;
+}
+
